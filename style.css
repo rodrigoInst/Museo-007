@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #000000 30%, #FF000C 45%);
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 1px;
+}
+
+/* FUENTES */
+h1, h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #000000;
+}
+/* FUENTES */
+
+
+/* NAV BAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    padding: 25px 30px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF000C;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+nav .Logo {
+    width: 115px;
+}
+
+nav .opciones {
+    display: flex;
+    align-items: center;
+}
+
+nav .opciones a {
+    margin-left: 40px;
+}
+
+nav .Pais {
+    width: 40px;
+    height: auto;
+    margin-right: 0;
+    border-radius: 10%;
+}
+
+nav .Pais-flecha {
+    margin-left: 0;
+    margin-right: 70px;
+}
+/* NAV BAR */
+
+
+/* SECCION PRINCIPAL */
+.contenedor-principal {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 595px;
+}
+
+.Flyer {
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    top: 60px;
+    width: 450px;
+}
+
+.Flecha {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    justify-content: center;
+    width: 30px;
+    right: 660px;
+}
+/* SECCION PRINCIPAL */
+
+
+/* SECCION VISITA (HORA-TICKETS-COMO LLEGAR-MAPA) */
+.contenedor-visita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    flex-grow: 1; /* Permite que las cajas se expandan para ocupar el espacio disponible */
+    margin: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    padding: 25px;
+    flex: 1;
+    width: calc(50% - 20px);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.right-box {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.under-box {
+    flex-basis: 100%;
+}
+
+.Mapa-museo {
+    width: 800px;
+    border-radius: 8px;
+    align-items: center;
+    margin-left: 210px;
+}
+/* SECCION VISITA (HORA-TICKETS-COMO LLEGAR-MAPA) */
+
+
+/* SECCION COLECCION */
+.contenedor-coleccion {
+    flex-grow: 1;
+    position: relative;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    padding: 25px;
+}
+
+.boton-izq, .boton-der {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.boton-izq {
+    top: 190px;
+    left: 30px;
+}
+
+.boton-der {
+    top: 190px;
+    right: 30px;
+}
+
+.coleccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 100px 0;
+}
+
+.colec {
+    width: auto;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* SECCION COLECCION */
+
+
+/* SECCION PELICULAS */
+.contenedor-peliculas {
+    flex-grow: 1;
+    position: relative;
+    top: 45px;
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    padding: 25px;
+}
+
+.pel {
+    top: 230px;
+}
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 100px 0;
+}
+
+.peli {
+    width: auto;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-imagen-peli {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.contenedor-imagen-peli img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* SECCION PELICULAS */
+
+
+/* FOOTER */
+footer {
+    background-color: #FF000C;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 190px;
+}
+
+.direc-contact {
+    margin-top: 15px;
+    margin-left: 42px;
+    margin-bottom: 70px;
+}
+
+.Icono-footer {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    justify-content: center;
+    width: 65px;
+    right: 645px;
+}
+
+.redes-sociales {
+    position: absolute;
+    top: 25px;
+    right: 42px;
+    display: flex;
+    gap: 18px;
+}
+
+.icono-redes {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    margin-left: 150px;
+    margin-right: 150px;
+    bottom: 0px;
+    padding: 5px;
+    font-size: 9px;
+}
+/* FOOTER */
+
+
+html {
+    scroll-behavior: smooth;
+}
